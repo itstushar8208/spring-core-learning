@@ -6,7 +6,23 @@
        http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="course"
+          class="com.tushar.Course">
+
+        <property name="courseName"
+                  value="Spring Framework"/>
+
+    </bean>
+
     <bean id="student"
-          class="com.tushar.Student"/>
+          class="com.tushar.Student">
+
+        <property name="name"
+                  value="Tushar"/>
+
+        <property name="course"
+                  ref="course"/>
+
+    </bean>
 
 </beans>

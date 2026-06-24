@@ -1,4 +1,5 @@
 package com.tushar;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -12,6 +13,6 @@ public class Main {
         Student student =
                 (Student) context.getBean("student");
 
-        student.study();
+        student.display();
     }
 }

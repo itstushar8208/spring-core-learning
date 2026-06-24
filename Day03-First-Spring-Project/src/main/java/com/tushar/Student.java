@@ -2,7 +2,19 @@ package com.tushar;
 
 public class Student {
 
-    public void study() {
-        System.out.println("Student is studying Spring Framework");
+    private String name;
+    private Course course;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
+    public void display() {
+        System.out.println("Student Name : " + name);
+        System.out.println("Course Name : " + course.getCourseName());
     }
 }
